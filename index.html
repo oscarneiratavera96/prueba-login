@@ -163,7 +163,10 @@
             background: #feffff;
             height: 100%;
             -webkit-animation: fadeIn 1s;
-            animation: fadeIn 1s
+            animation: fadeIn 1s;
+            width: 66vw;
+            min-width: 66vw;
+            max-width: 66vw;
         }
 
         *,
@@ -176,7 +179,8 @@
         body {
             display: flex;
             flex-direction: row;
-            z-index: -999
+            z-index: -999;
+            overflow: hidden;
         }
 
         .panel,
@@ -265,7 +269,10 @@
             /* position: fixed; */
             right: 0;
             width: auto;
-            z-index: 1
+            z-index: 1;
+            width: 34vw;
+            min-width: 34vw;
+            max-width: 34vw;
         }
 
         .accountButton,
