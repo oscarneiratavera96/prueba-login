@@ -755,7 +755,7 @@
 
         }
 
-        .email {
+        #email {
             position: absolute;
             outline: none;
             border: 2px solid #000;
@@ -767,7 +767,7 @@
         }
 
 
-        input.email::placeholder {
+        input#email::placeholder {
             display: none !important;
         }
 
@@ -780,15 +780,15 @@
             background-color: #ffff;
         }
 
-        .email:focus,
-        .email:valid {
+        #email:focus,
+        #email:valid {
             color: #66ff00;
             border: 4px solid #66ff00;
 
         }
 
-        .email:focus+label[for="email"],
-        .email:valid+label[for="email"] {
+        #email:focus+label[for="email"],
+        #email:valid+label[for="email"] {
             color: #66ff00;
             height: 30px;
             line-height: 30px;
