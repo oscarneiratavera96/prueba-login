@@ -601,48 +601,6 @@
         } */
 
         /* endinject */
-
-        .entry-item:nth-child(1) {
-            position: relative;
-            margin-top: 30px;
-            /* Espacio para la etiqueta cuando se mueve arriba */
-        }
-
-        .entry-item:nth-child(1) label[for="email"] {
-            position: absolute;
-            top: 10px;
-            /* Posición inicial */
-            left: 10px;
-            transition: top 0.3s ease, font-size 0.3s ease, opacity 0.3s ease;
-            /* Transiciones agregadas */
-            font-size: 1em;
-            color: #999;
-            /* Color de la etiqueta */
-            opacity: 0;
-            /* La etiqueta inicialmente oculta */
-        }
-
-        .entry-item:nth-child(1) input[type=email] {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            transition: border-color 0.3s ease;
-        }
-
-        .entry-item:nth-child(1) input[type=email]:focus+label {
-            top: 0;
-            /* Mueve la etiqueta arriba del campo de entrada */
-            font-size: 0.8em;
-            /* Tamaño de la etiqueta cuando está arriba */
-            opacity: 1;
-            /* Hace visible la etiqueta cuando el campo está enfocado */
-        }
-
-        .entry-item:nth-child(1) input[type=email]:focus {
-            outline: none;
-            border-color: #007bff;
-        }
     </style>
 
     <style>
