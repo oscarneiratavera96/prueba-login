@@ -766,27 +766,29 @@
             height: 70px;
         }
 
-        input[type=email]::placeholder {
+
+        input.email::placeholder {
             display: none;
         }
 
+
         label[for="email"] {
-            position: absolute;
+            /* position: absolute; */
             font-size: 1.6em;
             padding: 0 25px;
             margin: 0 20px;
             background-color: #ffff;
         }
 
-        input[type=email]:focus,
-        input[type=email]:valid {
+        .email:focus,
+        .email:valid {
             color: #66ff00;
             border: 4px solid #66ff00;
 
         }
 
-        input[type=email]:focus+label[for="email"],
-        input[type=email]:valid+label[for="email"] {
+        .email:focus+label[for="email"],
+        .email:valid+label[for="email"] {
             color: #66ff00;
             height: 30px;
             line-height: 30px;
