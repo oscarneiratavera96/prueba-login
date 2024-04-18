@@ -332,6 +332,7 @@
         }
 
         .api_container {
+            margin-left: 11px;
             display: inline-block;
             padding-left: 0;
             box-shadow: 0px 2px 20px hsla(216, 81%, 18%, 0.14);
@@ -403,8 +404,25 @@
         }
 
         label[for="password"] {
-            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform-origin: top left;
+            z-index: 1;
+            transform: translate(0.875rem, 1.25rem) scale(1);
+            pointer-events: none;
+            padding: 0;
+            font-size: 0.875rem;
+            line-height: 1;
+            letter-spacing: 0.00938em;
+            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
         }
+
+
+
+
 
         .accountButton {
             display: inline-flex;
@@ -744,6 +762,145 @@
         }
 
         /* endinject */
+
+
+
+
+        input[type=email] {
+            display: flex;
+            flex-flow: column;
+            position: relative;
+        }
+
+        input[type=email] .input {
+            position: relative;
+            width: 100%;
+            box-shadow: 0 0 0 0;
+            border-radius: 0.5rem;
+            padding: 0;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            background: unset;
+        }
+
+        input[type=email] .input.input-text {
+            width: 100%;
+            height: 3.5rem;
+            padding: 0 1rem;
+            background: transparent;
+            outline: none;
+            border: 0;
+            box-shadow: unset;
+            border-radius: inherit;
+        }
+
+        input[type=email] .input.input-text:focus {
+            box-shadow: unset;
+        }
+
+        input[type=email] .input.input-text:autofill {
+            background: transparent;
+            outline: none;
+            border: 0;
+            box-shadow: unset;
+        }
+
+        label[for="password"] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform-origin: top left;
+            z-index: 1;
+            transform: translate(0.875rem, 1.25rem) scale(1);
+            pointer-events: none;
+            padding: 0;
+            font-size: 0.875rem;
+            font-family: var(--main-font);
+            font-weight: var(--main-regular);
+            line-height: 1;
+            letter-spacing: 0.00938em;
+            color: var(--gris-l43);
+            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        input[type=email] .input.input-fieldset {
+            top: -5px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0;
+            padding: 0 8px;
+            overflow: hidden;
+            position: absolute;
+            border-style: solid;
+            border-width: 1px;
+            border-color: var(--gris-l43);
+            border-radius: inherit;
+            pointer-events: none;
+            transition: all 100ms cubic-bezier(0, 0, 0.2, 1) 50ms;
+            z-index: 1;
+            background: transparent;
+        }
+
+        input[type=email] .input.input-fieldset .legend {
+            width: auto;
+            height: 11px;
+            display: block;
+            padding: 0;
+            margin: 0;
+            font-size: 0.75rem;
+            max-width: 0;
+            text-align: left;
+            transition: max-width 100ms cubic-bezier(0, 0, 0.2, 1) 50ms;
+            visibility: hidden;
+        }
+
+        input[type=email] .input.input-fieldset .legend .span {
+            display: inline-block;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        input[type=email]:hover .input.input-fieldset {
+            border-width: 2px;
+        }
+
+        input[type=email]:focus-within .input.input-fieldset {
+            border-width: 2px;
+            border-color: var(--primario-morado);
+        }
+
+        input[type=email]:focus-within label[for="password"] {
+            color: var(--primario-morado);
+            transform: translate(0.875rem, -0.375rem) scale(0.75);
+        }
+
+        input[type=email]:focus-within .input.input-fieldset .legend {
+            max-width: 1000px;
+        }
+
+        input[type=email].input--filled label[for="password"] {
+            color: var(--primario-morado);
+            transform: translate(0.875rem, -0.375rem) scale(0.75);
+        }
+
+        input[type=email].input--filled .input.input-fieldset .legend {
+            max-width: 1000px;
+        }
+
+        input[type=email].highlightError label[for="password"] {
+            color: var(--rojo-error);
+        }
+
+        input[type=email].highlightError .input.input-fieldset {
+            border-color: var(--rojo-error);
+        }
+
+        input[type=email].highlightError .error {
+            color: var(--rojo-error);
+            text-align: start;
+            font-size: 0.75rem;
+            padding: 0 0.875rem;
+        }
     </style>
 
 </head>
