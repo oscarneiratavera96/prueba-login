@@ -745,9 +745,7 @@
         label[for="email"] {
             position: absolute;
             font-size: 14px;
-            padding: 0 11px;
-            margin: -6px 20px;
-            background-color: #ffff;
+            margin: 20 20px;
         }
 
         #email:focus {
@@ -755,13 +753,14 @@
 
         }
 
-        .entry:nth-child(1):focus-within>label {
-            color: #66ff00;
+        .entry-item:nth-child(1):focus-within>label {
+            color: hsla(253, 100%, 56%, 1);
             height: 30px;
             line-height: 30px;
             padding: 0 12px;
             transform: translate(-15px, -16px) scale(0.88);
             z-index: 1111;
+            background-color: #ffff;
         }
 
         /* #email:focus~label[for="email"] {
