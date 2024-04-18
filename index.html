@@ -389,14 +389,6 @@
             gap: 15px;
         }
 
-        label[for="email"] {
-            /* display: none; */
-        }
-
-        label[for="password"] {
-
-            display: none;
-        }
 
 
 
@@ -602,15 +594,7 @@
             margin-left: 0
         }
 
-        span.placeholder {
-            display: none;
-            /* color: #696969; */
-            color: green;
-            margin: 6px 0 0 -6px;
-            padding-left: 10px;
-            width: 380px;
-            z-index: -1
-        }
+
 
         input[type=text],
         select {
@@ -629,13 +613,7 @@
             box-shadow: 0 0 0 */
         }
 
-        input[type=text]:focus {
-            border: 1px solid #6b6b6b
-        }
 
-        input[type=text]:invalid {
-            outline: 0
-        }
 
         #countryCode {
             width: auto;
@@ -765,22 +743,20 @@
 
 
         label[for="email"] {
-            position: absolute;
+            /* position: absolute; */
             font-size: 1.6em;
             padding: 0 25px;
             margin: 0 20px;
             background-color: #ffff;
         }
 
-        #email:focus,
-        #email:valid {
+        #email:focus {
             color: #66ff00;
             border: 4px solid #66ff00;
 
         }
 
-        #email:focus+label[for="email"],
-        #email:valid+label[for="email"] {
+        #email:focus+label[for="email"] {
             color: #66ff00;
             height: 30px;
             line-height: 30px;
