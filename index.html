@@ -755,7 +755,7 @@
 
         }
 
-        #email:focus~label[for="email"] {
+        .entry-item:nth-child(1):focus-within>label {
             color: #66ff00;
             height: 30px;
             line-height: 30px;
@@ -763,6 +763,15 @@
             transform: translate(-15px, -16px) scale(0.88);
             z-index: 1111;
         }
+
+        /* #email:focus~label[for="email"] {
+            color: #66ff00;
+            height: 30px;
+            line-height: 30px;
+            padding: 0 12px;
+            transform: translate(-15px, -16px) scale(0.88);
+            z-index: 1111;
+        } */
     </style>
 
 </head>
