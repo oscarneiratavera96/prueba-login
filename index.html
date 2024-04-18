@@ -760,6 +760,17 @@
             background-color: #ffff;
         }
 
+        #email:not(:placeholder-shown)+label,
+        .entry-item:nth-child(1):focus-within>input:not(:placeholder-shown)+label {
+            color: hsla(253, 100%, 56%, 1);
+            height: 30px;
+            line-height: 30px;
+            padding: 0 12px;
+            transform: translate(-15px, -34px) scale(0.88);
+            z-index: 1111;
+            background-color: #ffff;
+        }
+
         /* #email:focus~label[for="email"] {
             color: #66ff00;
             height: 30px;
