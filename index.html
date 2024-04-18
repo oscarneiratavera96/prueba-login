@@ -243,11 +243,10 @@
             font-size: .9em
         }
 
-        /* 
         input:focus,
         textarea:focus {
             outline: 0
-        } */
+        }
 
         .error {
             order: 1;
@@ -370,7 +369,7 @@
             font-size: 14px;
         }
 
-        /* input[type=email]:focus,
+        input[type=email]:focus,
         input[type=number]:focus,
         input[type=password]:focus,
         input[type=text]:focus,
@@ -378,7 +377,7 @@
             outline: 1.5px solid hsla(253, 100%, 56%, 1);
             font-size: 14px;
 
-        } */
+        }
 
         .divider {
             display: none;
@@ -638,9 +637,9 @@
             box-shadow: 0 0 0 */
         }
 
-        /* input[type=text]:focus {
+        input[type=text]:focus {
             border: 1px solid #6b6b6b
-        } */
+        }
 
         input[type=text]:invalid {
             outline: 0
@@ -756,20 +755,20 @@
 
         }
 
-        input[type=email] {
+        .email {
             position: absolute;
             outline: none;
             border: 2px solid #000;
             border-radius: 4px;
             background: transparent;
             transition: 0.1s ease;
-            z-index: 1111;
+            /* z-index: 1111; */
             height: 70px;
         }
 
 
         input.email::placeholder {
-            display: none;
+            display: none !important;
         }
 
 
