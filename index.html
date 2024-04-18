@@ -746,16 +746,16 @@
             position: absolute;
             font-size: 14px;
             padding: 0 11px;
-            margin: -6 20px;
+            margin: -6px 20px;
             background-color: #ffff;
         }
 
         #email:focus {
-            border: 1.5px solid hsla(253, 100%, 56%, 1);
+            border: 2px solid hsla(253, 100%, 56%, 1);
 
         }
 
-        #email:focus+label[for="email"] {
+        #email:focus~label[for="email"] {
             color: #66ff00;
             height: 30px;
             line-height: 30px;
