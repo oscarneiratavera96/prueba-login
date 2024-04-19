@@ -742,7 +742,7 @@
         }
 
 
-        label[for="email"] {
+        #email:placeholder-shown~label[for="email"] {
             position: absolute;
             font-size: 14px;
             margin: 20px 20px;
@@ -751,6 +751,7 @@
 
 
         .entry-item:nth-child(1):focus-within>label {
+            position: absolute;
             color: hsla(253, 100%, 56%, 1);
             height: 30px;
             line-height: 30px;
@@ -771,6 +772,7 @@
         } */
 
         #email:not(:placeholder-shown)~label[for="email"] {
+            position: absolute;
             color: hsla(253, 100%, 56%, 1);
             height: 30px;
             line-height: 30px;
