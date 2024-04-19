@@ -760,7 +760,7 @@
             background-color: #ffff;
         }
 
-        #email:not(:placeholder-shown)+.error.itemLevel label {
+        /* #email:not(:placeholder-shown)+.error.itemLevel label {
             color: hsla(253, 100%, 56%, 1);
             height: 30px;
             line-height: 30px;
@@ -768,10 +768,15 @@
             transform: translate(-15px, -34px) scale(0.88);
             z-index: 1111;
             background-color: #ffff;
-        }
+        } */
 
-        #email:not(:placeholder-shown) {
-            color: rgb(255, 55, 0);
+        #email:not(:placeholder-shown)~label[for="email"] {
+            color: hsla(253, 100%, 56%, 1);
+            height: 30px;
+            line-height: 30px;
+            padding: 0 12px;
+            transform: translate(-15px, -34px) scale(0.88);
+            z-index: 1111;
             background-color: #ffff;
         }
 
