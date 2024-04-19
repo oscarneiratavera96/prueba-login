@@ -742,11 +742,11 @@
         }
 
 
-        label[for="email"] {
+        /* label[for="email"] {
             position: absolute;
             font-size: 14px;
             margin: 20px 20px;
-        }
+        } */
 
 
 
@@ -760,7 +760,7 @@
             background-color: #ffff;
         }
 
-        #email:not(:placeholder-shown)+.error.itemLevel label {
+        /* #email:not(:placeholder-shown)+.error.itemLevel label {
             color: hsla(253, 100%, 56%, 1);
             height: 30px;
             line-height: 30px;
@@ -768,6 +768,12 @@
             transform: translate(-15px, -34px) scale(0.88);
             z-index: 1111;
             background-color: #ffff;
+        } */
+
+        label[for="email"]:placeholder-shown {
+            position: absolute;
+            font-size: 14px;
+            margin: 20px 20px;
         }
 
 
