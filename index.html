@@ -4,8 +4,8 @@
 <head>
 
     <title>Login - Grupo Saesa</title>
-    <script src="https://raw.githubusercontent.com/oscarneiratavera96/prueba-login/main/my-script.js" defer></script>
-    <script src="https://raw.githubusercontent.com/oscarneiratavera96/prueba-login/main/my-script.js" async></script>
+    <script src="./my-script.js" defer></script>
+    <script src="./my-script.js" async></script>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -742,7 +742,7 @@
         }
 
 
-        #email:placeholder-shown~label[for="email"] {
+        label[for="email"] {
             position: absolute;
             font-size: 14px;
             margin: 20px 20px;
@@ -751,7 +751,6 @@
 
 
         .entry-item:nth-child(1):focus-within>label {
-            position: absolute;
             color: hsla(253, 100%, 56%, 1);
             height: 30px;
             line-height: 30px;
@@ -772,7 +771,6 @@
         } */
 
         #email:not(:placeholder-shown)~label[for="email"] {
-            position: absolute;
             color: hsla(253, 100%, 56%, 1);
             height: 30px;
             line-height: 30px;
