@@ -783,6 +783,33 @@
         }
 
 
+        /* Estilo del ícono del ojo */
+        .password-label:after {
+            content: "";
+            background-image: url('https://cdne-pdigital-prd-eus-002.azureedge.net/icons/OjoAbierto.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+
+        #password:focus+.password-label:after {
+            background-image: url('https://cdne-pdigital-prd-eus-002.azureedge.net/icons/OjoCerrado.svg');
+        }
+
+        /* Estilo para mostrar la contraseña */
+        #password+.password-label:after:hover~.password-input {
+            -webkit-text-security: none;
+            text-security: none;
+        }
+
+
 
 
 
