@@ -740,13 +740,35 @@
             /* height: 70px; */
         }
 
+        #password {
+            /* position: absolute; */
+            /* outline: none; */
+
+            border-radius: 4px;
+            background: transparent;
+            transition: 0.1s ease;
+            /* z-index: 1111; */
+            /* height: 70px; */
+        }
+
+
 
         input#email::placeholder {
             display: none !important;
         }
 
+        input#password::placeholder {
+            display: none !important;
+        }
+
 
         label[for="email"] {
+            position: absolute;
+            font-size: 14px;
+            margin: 20px 20px;
+        }
+
+        label[for="password"] {
             position: absolute;
             font-size: 14px;
             margin: 20px 20px;
@@ -764,15 +786,6 @@
             background-color: #ffff;
         }
 
-        /* #email:not(:placeholder-shown)+.error.itemLevel label {
-            color: hsla(253, 100%, 56%, 1);
-            height: 30px;
-            line-height: 30px;
-            padding: 0 12px;
-            transform: translate(-15px, -34px) scale(0.88);
-            z-index: 1111;
-            background-color: #ffff;
-        } */
 
         #email:not(:placeholder-shown)~label[for="email"] {
             color: hsla(253, 100%, 56%, 1);
@@ -783,6 +796,20 @@
             z-index: 1111;
             background-color: #ffff;
         }
+
+
+        #password:not(:placeholder-shown)~label[for="password"] {
+            color: hsla(253, 100%, 56%, 1);
+            height: 30px;
+            line-height: 30px;
+            padding: 0 12px;
+            transform: translate(-15px, -34px) scale(0.88);
+            z-index: 1111;
+            background-color: #ffff;
+        }
+
+
+
 
 
 
