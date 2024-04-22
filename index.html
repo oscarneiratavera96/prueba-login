@@ -729,14 +729,10 @@
         }
 
         #email {
-            /* position: absolute; */
-            outline: none;
-
+            /* outline: none; */
             border-radius: 4px;
             background: transparent;
             transition: 0.1s ease;
-            /* z-index: 1111; */
-            /* height: 70px; */
         }
 
 
@@ -746,6 +742,12 @@
 
 
         label[for="email"] {
+            position: absolute;
+            font-size: 14px;
+            margin: 20px 20px;
+        }
+
+        label[for="password"] {
             position: absolute;
             font-size: 14px;
             margin: 20px 20px;
@@ -763,52 +765,10 @@
             background-color: #ffff;
         }
 
-        /* #email:not(:placeholder-shown)+.error.itemLevel label {
-            color: hsla(253, 100%, 56%, 1);
-            height: 30px;
-            line-height: 30px;
-            padding: 0 12px;
-            transform: translate(-15px, -34px) scale(0.88);
-            z-index: 1111;
-            background-color: #ffff;
-        } */
-
-        #email:not(:placeholder-shown)~label[for="email"] {
-            color: hsla(253, 100%, 56%, 1);
-            height: 30px;
-            line-height: 30px;
-            padding: 0 12px;
-            transform: translate(-15px, -34px) scale(0.88);
-            z-index: 1111;
-            background-color: #ffff;
-        }
 
 
-        /* Estilo del ícono del ojo */
-        .password-label:after {
-            content: "";
-            background-image: url('https://cdne-pdigital-prd-eus-002.azureedge.net/icons/OjoAbierto.svg');
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 20px;
-            height: 20px;
-            position: absolute;
-            top: 66%;
-            /* right: 10px; */
-            transform: translateY(-50%);
-            cursor: pointer;
-        }
 
 
-        #password:focus+.password-label:after {
-            background-image: url('https://cdne-pdigital-prd-eus-002.azureedge.net/icons/OjoCerrado.svg');
-        }
-
-        /* Estilo para mostrar la contraseña */
-        #password+.password-label:after:hover~.password-input {
-            -webkit-text-security: none;
-            text-security: none;
-        }
 
 
 
