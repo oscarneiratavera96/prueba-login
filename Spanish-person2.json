@@ -1,0 +1,432 @@
+{
+  "LocalizedStrings": [
+    {
+      "ElementType": "ClaimType",
+      "ElementId": "UserId",
+      "StringId": "DisplayName",
+      "Override": false,
+      "Value": "Nombre de usuario"
+    },
+    {
+      "ElementType": "ClaimType",
+      "ElementId": "UserId",
+      "StringId": "PatternHelpText",
+      "Override": false,
+      "Value": "El nombre de usuario que ha proporcionado no es válido."
+    },
+    {
+      "ElementType": "ClaimType",
+      "ElementId": "UserId",
+      "StringId": "UserHelpText",
+      "Override": false,
+      "Value": "Nombre de usuario usado para iniciar sesión"
+    },
+    {
+      "ElementType": "ClaimType",
+      "ElementId": "email",
+      "StringId": "DisplayName",
+      "Override": true,
+      "Value": "Email"
+    },
+    {
+      "ElementType": "ClaimType",
+      "ElementId": "email",
+      "StringId": "PatternHelpText",
+      "Override": true,
+      "Value": "Ingrese un Email válido"
+    },
+    {
+      "ElementType": "ClaimType",
+      "ElementId": "email",
+      "StringId": "UserHelpText",
+      "Override": false,
+      "Value": "Dirección de correo electrónico que se puede usar para contactarle."
+    },
+    {
+      "ElementType": "ClaimType",
+      "ElementId": "password",
+      "StringId": "DisplayName",
+      "Override": true,
+      "Value": "Contraseña"
+    },
+    {
+      "ElementType": "ClaimType",
+      "ElementId": "password",
+      "StringId": "UserHelpText",
+      "Override": false,
+      "Value": "Escribir contraseña"
+    },
+    {
+      "ElementType": "ClaimType",
+      "ElementId": "phoneNumber",
+      "StringId": "DisplayName",
+      "Override": false,
+      "Value": "Número de teléfono"
+    },
+    {
+      "ElementType": "ClaimType",
+      "ElementId": "signInNamePhoneEmail",
+      "StringId": "DisplayName",
+      "Override": false,
+      "Value": "Número de teléfono o dirección de correo electrónico"
+    },
+    {
+      "ElementType": "ClaimsProvider",
+      "ElementId": null,
+      "StringId": "AmazonExchange",
+      "Override": false,
+      "Value": "Amazon"
+    },
+    {
+      "ElementType": "ClaimsProvider",
+      "ElementId": null,
+      "StringId": "ChangePhoneNumber",
+      "Override": false,
+      "Value": "Cambiar número de teléfono"
+    },
+    {
+      "ElementType": "ClaimsProvider",
+      "ElementId": null,
+      "StringId": "FacebookExchange",
+      "Override": false,
+      "Value": "Facebook"
+    },
+    {
+      "ElementType": "ClaimsProvider",
+      "ElementId": null,
+      "StringId": "GoogleExchange",
+      "Override": true,
+      "Value": "Acceder con Google"
+    }, 
+    {
+      "ElementType": "ClaimsProvider",
+      "ElementId": null,
+      "StringId": "AppleManagedExchange",
+      "Override": true,
+      "Value": "Iniciar sesión con Apple"
+    },
+    {
+      "ElementType": "ClaimsProvider",
+      "ElementId": null,
+      "StringId": "LinkedInExchange",
+      "Override": false,
+      "Value": "LinkedIn"
+    },
+    {
+      "ElementType": "ClaimsProvider",
+      "ElementId": null,
+      "StringId": "MicrosoftAccountExchange",
+      "Override": false,
+      "Value": "Microsoft"
+    },
+    {
+      "ElementType": "ClaimsProvider",
+      "ElementId": null,
+      "StringId": "SignInWithLogonEmailExchange",
+      "Override": false,
+      "Value": "Cuenta local"
+    },
+    {
+      "ElementType": "ClaimsProvider",
+      "ElementId": null,
+      "StringId": "SignInWithLogonNameExchange",
+      "Override": false,
+      "Value": "Cuenta local"
+    },
+    {
+      "ElementType": "ClaimsProvider",
+      "ElementId": null,
+      "StringId": "SignUpWithLogonEmailExchange",
+      "Override": false,
+      "Value": "Correo electrónico"
+    },
+    {
+      "ElementType": "ClaimsProvider",
+      "ElementId": null,
+      "StringId": "SignUpWithLogonNameExchange",
+      "Override": false,
+      "Value": "Id. de usuario"
+    },
+    {
+      "ElementType": "ClaimsProvider",
+      "ElementId": null,
+      "StringId": "SignUpWithLogonPhoneExchange",
+      "Override": false,
+      "Value": "Teléfono"
+    },
+    {
+      "ElementType": "ErrorMessage",
+      "ElementId": null,
+      "StringId": "AADRequestsThrottled",
+      "Override": false,
+      "Value": "Hay demasiadas solicitudes en este momento. Espere un momento y vuelva a intentarlo."
+    },
+    {
+      "ElementType": "ErrorMessage",
+      "ElementId": null,
+      "StringId": "DefaultMessage",
+      "Override": false,
+      "Value": "Nombre de usuario o contraseña no válidos."
+    },
+    {
+      "ElementType": "ErrorMessage",
+      "ElementId": null,
+      "StringId": "UserMessageIfClaimsPrincipalDoesNotExist",
+      "Override": false,
+      "Value": "Parece que no es posible encontrar la cuenta."
+    },
+    {
+      "ElementType": "ErrorMessage",
+      "ElementId": null,
+      "StringId": "UserMessageIfInvalidPassword",
+      "Override": false,
+      "Value": "La contraseña no es correcta."
+    },
+    {
+      "ElementType": "ErrorMessage",
+      "ElementId": null,
+      "StringId": "UserMessageIfOldPasswordUsed",
+      "Override": false,
+      "Value": "Parece que has usado una contraseña antigua."
+    },
+    {
+      "ElementType": "ErrorMessage",
+      "ElementId": null,
+      "StringId": "UserMessageIfPasswordExpired",
+      "Override": false,
+      "Value": "Su contraseña ha caducado."
+    },
+    {
+      "ElementType": "ErrorMessage",
+      "ElementId": null,
+      "StringId": "UserMessageIfUserAccountDisabled",
+      "Override": false,
+      "Value": "Se ha bloqueado su cuenta. Póngase en contacto con el personal de soporte para desbloquearla y, después, vuelva a intentarlo."
+    },
+    {
+      "ElementType": "ErrorMessage",
+      "ElementId": null,
+      "StringId": "UserMessageIfUserAccountLocked",
+      "Override": false,
+      "Value": "Su cuenta está bloqueada temporalmente para evitar un uso no autorizado. Inténtelo de nuevo más tarde."
+    },
+    {
+      "ElementType": "InputValidation",
+      "ElementId": "CustomPassword",
+      "StringId": "CharacterClasses",
+      "Override": false,
+      "Value": "La contraseña debe tener al menos {0} de los siguientes elementos:"
+    },
+    {
+      "ElementType": "InputValidation",
+      "ElementId": "CustomPassword",
+      "StringId": "CharacterClassesAll",
+      "Override": false,
+      "Value": "La contraseña debe tener todos los elementos siguientes:"
+    },
+    {
+      "ElementType": "InputValidation",
+      "ElementId": "StrongPassword",
+      "StringId": "CharacterClasses",
+      "Override": false,
+      "Value": "La contraseña debe tener al menos {0} de los siguientes elementos:"
+    },
+    {
+      "ElementType": "Predicate",
+      "ElementId": "AllowedAADCharacters",
+      "StringId": "HelpText",
+      "Override": false,
+      "Value": "Se ha proporcionado un carácter que no es válido."
+    },
+    {
+      "ElementType": "Predicate",
+      "ElementId": "DateRange",
+      "StringId": "HelpText",
+      "Override": false,
+      "Value": "La fecha debe estar entre {0} y {1}."
+    },
+    {
+      "ElementType": "Predicate",
+      "ElementId": "DateRangeBetween1905AndToday",
+      "StringId": "HelpText",
+      "Override": false,
+      "Value": "La fecha debe estar entre 01-01-1905 y hoy."
+    },
+    {
+      "ElementType": "Predicate",
+      "ElementId": "DisallowedWhitespace",
+      "StringId": "HelpText",
+      "Override": false,
+      "Value": "La contraseña no debe comenzar ni terminar con un carácter de espacio en blanco."
+    },
+    {
+      "ElementType": "Predicate",
+      "ElementId": "ExactLength",
+      "StringId": "HelpText",
+      "Override": false,
+      "Value": "La contraseña debe tener exactamente {0} caracteres."
+    },
+    {
+      "ElementType": "Predicate",
+      "ElementId": "IsLengthBetween8And64",
+      "StringId": "HelpText",
+      "Override": false,
+      "Value": "La contraseña debe tener entre 8 y 64 caracteres."
+    },
+    {
+      "ElementType": "Predicate",
+      "ElementId": "LengthRange",
+      "StringId": "HelpText",
+      "Override": false,
+      "Value": "La contraseña debe tener entre {0} y {1} caracteres."
+    },
+    {
+      "ElementType": "Predicate",
+      "ElementId": "Lowercase",
+      "StringId": "HelpText",
+      "Override": false,
+      "Value": "una letra minúscula"
+    },
+    {
+      "ElementType": "Predicate",
+      "ElementId": "Number",
+      "StringId": "HelpText",
+      "Override": false,
+      "Value": "un número"
+    },
+    {
+      "ElementType": "Predicate",
+      "ElementId": "PIN",
+      "StringId": "HelpText",
+      "Override": false,
+      "Value": "La contraseña solo puede usar números."
+    },
+    {
+      "ElementType": "Predicate",
+      "ElementId": "Symbol",
+      "StringId": "HelpText",
+      "Override": false,
+      "Value": "símbolo"
+    },
+    {
+      "ElementType": "Predicate",
+      "ElementId": "Uppercase",
+      "StringId": "HelpText",
+      "Override": false,
+      "Value": "letra mayúscula"
+    },
+    {
+      "ElementType": "Predicate",
+      "ElementId": "internationalOrNationalPhoneNumber",
+      "StringId": "HelpText",
+      "Override": false,
+      "Value": "El valor ingresado debe ser un número de teléfono."
+    },
+    {
+      "ElementType": "UxElement",
+      "ElementId": null,
+      "StringId": "button_signin",
+      "Override": true,
+      "Value": "Entrar"
+    },
+    {
+      "ElementType": "UxElement",
+      "ElementId": null,
+      "StringId": "createaccount_intro",
+      "Override": false,
+      "Value": "¿No tiene una cuenta?"
+    },
+    {
+      "ElementType": "UxElement",
+      "ElementId": null,
+      "StringId": "createaccount_one_link",
+      "Override": false,
+      "Value": "Registrarse ahora"
+    },
+    {
+      "ElementType": "UxElement",
+      "ElementId": null,
+      "StringId": "createaccount_three_links",
+      "Override": false,
+      "Value": "Registro con {0}, {1} o {2}"
+    },
+    {
+      "ElementType": "UxElement",
+      "ElementId": null,
+      "StringId": "createaccount_two_links",
+      "Override": false,
+      "Value": "Registro con {0} o {1}"
+    },
+    {
+      "ElementType": "UxElement",
+      "ElementId": null,
+      "StringId": "divider_title",
+      "Override": false,
+      "Value": "O"
+    },
+  
+    {
+      "ElementType": "UxElement",
+      "ElementId": null,
+      "StringId": "forgotpassword_link",
+      "Override": true,
+      "Value": "Olvidé mi contraseña"
+    },
+    {
+      "ElementType": "UxElement",
+      "ElementId": null,
+      "StringId": "heading",
+      "Override": true,
+      "Value": "Ingresa a tu cuenta"
+    },
+    {
+      "ElementType": "UxElement",
+      "ElementId": null,
+      "StringId": "invalid_generic",
+      "Override": false,
+      "Value": "Escriba un valor de {0} válido."
+    },
+    {
+      "ElementType": "UxElement",
+      "ElementId": null,
+      "StringId": "local_intro_generic",
+      "Override": true,
+      "Value": "—— O ingresa tu usuario y contraseña ——"
+    },
+    {
+      "ElementType": "UxElement",
+      "ElementId": null,
+      "StringId": "remember_me",
+      "Override": false,
+      "Value": "Mantener la sesión iniciada"
+    },
+    {
+      "ElementType": "UxElement",
+      "ElementId": null,
+      "StringId": "requiredField_generic",
+      "Override": true,
+      "Value": "Campo Obligatorio"
+    },
+    {
+      "ElementType": "UxElement",
+      "ElementId": null,
+      "StringId": "requiredField_password",
+      "Override": true,
+      "Value": "Campo Obligatorio"
+    },
+    {
+      "ElementType": "UxElement",
+      "ElementId": null,
+      "StringId": "social_intro",
+      "Override": true,
+      "Value": ""
+    },
+    {
+      "ElementType": "UxElement",
+      "ElementId": null,
+      "StringId": "unknown_error",
+      "Override": false,
+      "Value": "Tenemos problemas para iniciar su sesión. Vuelva a intentarlo más tarde."
+    }
+  ]
+}
