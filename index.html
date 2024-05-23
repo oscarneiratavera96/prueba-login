@@ -363,6 +363,7 @@
             box-shadow: unset;
             border-radius: 5px;
             font-size: 14px;
+            width: 204px;
         }
 
         input[type=email]:focus,
@@ -694,6 +695,18 @@
             transition: 0.1s ease;
         }
 
+        #newPassword_label {
+            border-radius: 4px;
+            background: transparent;
+            transition: 0.1s ease;
+        }
+
+        #reenterPassword_label {
+            border-radius: 4px;
+            background: transparent;
+            transition: 0.1s ease;
+        }
+
 
 
         input#email::placeholder {
@@ -701,6 +714,14 @@
         }
 
         input#password::placeholder {
+            display: none !important;
+        }
+
+        input#newPassword_label ::placeholder {
+            display: none !important;
+        }
+
+        input#reenterPassword_label::placeholder {
             display: none !important;
         }
 
@@ -713,6 +734,20 @@
         }
 
         label[for="password"] {
+            position: absolute;
+            font-size: 14px;
+            margin: 20px 20px;
+            color: hsla(230, 17%, 63%, 1)
+        }
+
+        label[for="newPassword"] {
+            position: absolute;
+            font-size: 14px;
+            margin: 20px 20px;
+            color: hsla(230, 17%, 63%, 1)
+        }
+
+        label[for="reenterPassword"] {
             position: absolute;
             font-size: 14px;
             margin: 20px 20px;
@@ -753,7 +788,47 @@
             background-color: #ffff;
         }
 
+        #newPassword_label :not(:placeholder-shown)~label[for="newPassword"] {
+            color: hsla(253, 100%, 56%, 1);
+            height: 30px;
+            line-height: 30px;
+            padding: 0 12px;
+            transform: translate(-15px, -34px) scale(0.88);
+            z-index: 1111;
+            background-color: #ffff;
+        }
+
+        #reenterPassword_label:not(:placeholder-shown)~label[for="reenterPassword"] {
+            color: hsla(253, 100%, 56%, 1);
+            height: 30px;
+            line-height: 30px;
+            padding: 0 12px;
+            transform: translate(-15px, -34px) scale(0.88);
+            z-index: 1111;
+            background-color: #ffff;
+        }
+
         #password:focus+label {
+            color: hsla(253, 100%, 56%, 1);
+            height: 30px;
+            line-height: 30px;
+            padding: 0 12px;
+            transform: translate(-15px, -34px) scale(0.88);
+            z-index: 1111;
+            background-color: #ffff;
+        }
+
+        #newPassword_label :focus+label {
+            color: hsla(253, 100%, 56%, 1);
+            height: 30px;
+            line-height: 30px;
+            padding: 0 12px;
+            transform: translate(-15px, -34px) scale(0.88);
+            z-index: 1111;
+            background-color: #ffff;
+        }
+
+        #reenterPassword_label:focus+label {
             color: hsla(253, 100%, 56%, 1);
             height: 30px;
             line-height: 30px;
