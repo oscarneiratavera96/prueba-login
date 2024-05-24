@@ -648,14 +648,14 @@
 
         }
 
-        #newPassword_label {
+        #newPassword {
             border-radius: 4px;
             background: transparent;
             transition: 0.1s ease;
 
         }
 
-        #reenterPassword_label {
+        #reenterPassword {
             border-radius: 4px;
             background: transparent;
             transition: 0.1s ease;
@@ -672,11 +672,11 @@
             display: none !important;
         }
 
-        input#newPassword_label ::placeholder {
+        input#newPassword ::placeholder {
             display: none !important;
         }
 
-        input#reenterPassword_label::placeholder {
+        input#reenterPassword::placeholder {
             display: none !important;
         }
 
@@ -743,7 +743,7 @@
             background-color: #ffff;
         }
 
-        #newPassword_label :not(:placeholder-shown)~label[for="newPassword"] {
+        #newPassword:not(:placeholder-shown)~label[for="newPassword"] {
             color: hsla(253, 100%, 56%, 1);
             height: 30px;
             line-height: 30px;
@@ -753,7 +753,7 @@
             background-color: #ffff;
         }
 
-        #reenterPassword_label:not(:placeholder-shown)~label[for="reenterPassword"] {
+        #reenterPassword:not(:placeholder-shown)~label[for="reenterPassword"] {
             color: hsla(253, 100%, 56%, 1);
             height: 30px;
             line-height: 30px;
@@ -773,7 +773,7 @@
             background-color: #ffff;
         }
 
-        #newPassword_label :focus+label {
+        #newPassword:focus+label {
             color: hsla(253, 100%, 56%, 1);
             height: 30px;
             line-height: 30px;
@@ -783,7 +783,7 @@
             background-color: #ffff;
         }
 
-        #reenterPassword_label:focus+label {
+        #reenterPassword:focus+label {
             color: hsla(253, 100%, 56%, 1);
             height: 30px;
             line-height: 30px;
