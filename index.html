@@ -3,8 +3,8 @@
 
 <head>
 
-    <title>Actualiza contraseña - Grupo Saesa</title>
-    <script src="https://stpdigitalfrontdev001.blob.core.windows.net/assets/icons/my-script.js" defer></script>
+    <title>Login - Grupo Saesa</title>
+    <script src="https://stpdigitalfrontdev001.blob.core.windows.net/assets/login/scripts/my-script.js" defer></script>
     <link rel="icon" type="image/png" sizes="16x16"
         href="https://cdne-pdigital-prd-eus-002.azureedge.net/favicon/original/favicon.svg">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,17 +17,9 @@
     <style id="common">
         @charset "utf-8";
 
-        .pageLevel,
-        body {
-            text-align: left
-        }
 
-        #panel,
-        .pageLevel,
-        .panel li,
-        label {
-            display: block
-        }
+
+
 
         button {
             width: auto;
@@ -102,9 +94,6 @@
             color: transparent !important
         }
 
-        #requiredFieldMissing {
-            display: none;
-        }
 
 
         h1,
@@ -145,12 +134,6 @@
             display: inline;
             list-style-type: none;
             margin-left: 0
-        }
-
-        ul {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
         }
 
         .heading h1 {
@@ -267,11 +250,7 @@
             font-weight: 600;
         }
 
-        .pageLevel {
-            margin-top: 5px;
-            font-size: 1.1em;
-            height: auto
-        }
+
 
         .highlightError {
             outline: 1.5px solid #a61e0c !important;
@@ -348,7 +327,7 @@
             border-radius: 12px;
             position: relative;
             transition: padding .6s ease 0s;
-            width: 64%;
+            width: 100%;
             height: 100%;
             margin-top: 98px;
             max-height: 457px;
@@ -372,7 +351,6 @@
             box-shadow: unset;
             border-radius: 5px;
             font-size: 14px;
-            width: 246px;
         }
 
         input[type=email]:focus,
@@ -389,12 +367,14 @@
             display: none;
         }
 
-        .helpLink {
-            display: none;
-        }
-
         .intro {
-            display: none;
+            text-align: center;
+            color: #5A607F;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
 
         .options {
@@ -402,11 +382,6 @@
             flex-direction: column;
             gap: 15px;
         }
-
-
-
-
-
 
         .accountButton {
             display: inline-flex;
@@ -439,6 +414,47 @@
         }
 
 
+        #GoogleExchange {
+            font-size: 14px;
+            border: #5A607F solid 1px;
+            color: #060709;
+            background-color: #fff;
+
+        }
+
+        #GoogleExchange:focus-visible {
+            outline: none !important;
+
+        }
+
+        #AppleExchange,
+        #AppleManagedExchange {
+            font-size: 14px;
+            border: #060709 solid 1px;
+            color: #060709;
+            background-color: #fff;
+
+        }
+
+
+        #GoogleExchange {
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAMAAACP+FljAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABOFBMVEX////62NXyi4Pual/rUEPqSz3tXlLyi4L5y8f86OfvcmjqQzXub2T85uT61dLrU0fvdWv86+nrT0LtX1PxgnnwgHfsXVHuaF398vHvdWnsWEv4xsL4wr7wenD+7sP0jRfqRjPsVkn85eT81mf7vAX3pQ7sUy/3ubT7xzH5uBj+/PyGsfjC1/v7vxP7yz9ChfSSuPiMtPj7xzDzwR78/fxel/VZlPWcv/n51GTVuBNOqki03r+vy/q60vv3672vtCI6qFA0qFNIsGTj8+jw9f5clvVDhfRrv4JLsWbC5cvY7t5gnt6Gsffp9exBrV5StGx4xY17xo9cuXU1pls9j8FNjPTo8P3S69lGr2JLoaPO3/zn9Opnvn5UtW7X7t3V7duCyZVeundCrl87q1lOs2l6xo+84sb9/v2qdWS0AAAAAWJLR0QAiAUdSAAAAAd0SU1FB+EIGQ4HDEDExrUAAADWSURBVDjLY2AYBZiAkYmZhZWNnQOHNCcXNxTw8GKT5+PnhgMBLPKCQiAZYRFRMW5ucQksCiSB0lLSIJaMLDZ5OXkFbkUlPB5QVlFVU8fnQw0VFU0tEEMbCnTQFOiqqOiBGfpQYEBIgSGaAiMVFWMTEMMUCMyACszRFFioWFpZwzg2QAW2aArs7B0cnZwhbBdXfX03F3RvuDs6Onp4glhe3kADfDD86esHVOHoHxAY5Bgcoh8ahhkS4RGOcBAZhS2somNg8rFxOIIzPiExKTklNS2dYaQBADviJWzWK7IJAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTA4LTI1VDE0OjA3OjEyLTA0OjAwBQDEvwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0wOC0yNVQxNDowNzoxMi0wNDowMHRdfAMAAAAASUVORK5CYII=);
+            background-size: 33px;
+            background-position-x: 30px;
+            background-position-y: 4px;
+            padding-left: 50px !important;
+        }
+
+
+
+        #AppleExchange,
+        #AppleManagedExchange {
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj48dGl0bGU+YXNzZXRzPC90aXRsZT48cGF0aCBkPSJNMTUuNDU0LDEwLjYzOEE0LjU0Nyw0LjU0NywwLDAsMSwxNy42Miw2LjgyM2E0LjY1Niw0LjY1NiwwLDAsMC0zLjY2Ni0xLjk4MmMtMS41NDMtLjE2Mi0zLjAzOC45MjMtMy44MjUuOTIzcy0yLjAxMS0uOTA3LTMuMzE0LS44ODNBNC44ODIsNC44ODIsMCwwLDAsMi43MDYsNy4zODdjLTEuNzc2LDMuMDc2LS40NTEsNy42LDEuMjUxLDEwLjA4M0M0LjgwOSwxOC42ODcsNS44LDIwLjA0Nyw3LjEwNiwyMGMxLjI3My0uMDUzLDEuNzUtLjgxMywzLjI4OC0uODEzLDEuNTIzLDAsMS45NjkuODEzLDMuMy43ODIsMS4zNjgtLjAyMiwyLjIyOS0xLjIyMywzLjA1LTIuNDUyYTEwLjA3MSwxMC4wNzEsMCwwLDAsMS4zOTUtMi44NDFBNC4zOTMsNC4zOTMsMCwwLDEsMTUuNDU0LDEwLjYzOFoiLz48cGF0aCBkPSJNMTIuOTQyLDMuMjA3QTQuNDc1LDQuNDc1LDAsMCwwLDEzLjk2NiwwLDQuNTUyLDQuNTUyLDAsMCwwLDExLjAyLDEuNTI1LDQuMjYxLDQuMjYxLDAsMCwwLDkuOTY5LDQuNjE3LDMuNzcsMy43NywwLDAsMCwxMi45NDIsMy4yMDdaIi8+PC9zdmc+);
+            background-size: 18px;
+            background-position-x: 26px;
+            background-position-y: 12px;
+            padding-left: 50px !important;
+        }
 
         span {
             margin: 17px 0px;
@@ -533,7 +549,11 @@
                 padding-left: 20px;
             }
 
-
+            .intro {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
 
 
 
@@ -547,7 +567,7 @@
 
             #background_background_image {
                 /* Cambiar la URL de la imagen */
-                content: url('https://raw.githubusercontent.com/oscarneiratavera96/prueba-login/main/fondo-mobile.svg');
+                content: url('https://stpdigitalfrontdev001.blob.core.windows.net/assets/login/images/fondo-mobile.svg');
             }
 
             img#background_background_image {
@@ -579,19 +599,13 @@
             margin-left: 0
         }
 
-
-
         .errorText {
             padding: 20px;
             width: 310px
         }
 
-
         .buttons {
-            margin-top: 24px;
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
+            margin-top: 3px
         }
 
         .buttons button {
@@ -651,21 +665,6 @@
             border-radius: 4px;
             background: transparent;
             transition: 0.1s ease;
-
-        }
-
-        #newPassword {
-            border-radius: 4px;
-            background: transparent;
-            transition: 0.1s ease;
-
-        }
-
-        #reenterPassword {
-            border-radius: 4px;
-            background: transparent;
-            transition: 0.1s ease;
-
         }
 
 
@@ -678,14 +677,6 @@
             display: none !important;
         }
 
-        input#newPassword ::placeholder {
-            display: none !important;
-        }
-
-        input#reenterPassword::placeholder {
-            display: none !important;
-        }
-
 
         label[for="email"] {
             position: absolute;
@@ -695,20 +686,6 @@
         }
 
         label[for="password"] {
-            position: absolute;
-            font-size: 14px;
-            margin: 20px 20px;
-            color: hsla(230, 17%, 63%, 1)
-        }
-
-        label[for="newPassword"] {
-            position: absolute;
-            font-size: 14px;
-            margin: 20px 20px;
-            color: hsla(230, 17%, 63%, 1)
-        }
-
-        label[for="reenterPassword"] {
             position: absolute;
             font-size: 14px;
             margin: 20px 20px;
@@ -749,47 +726,7 @@
             background-color: #ffff;
         }
 
-        #newPassword:not(:placeholder-shown)~label[for="newPassword"] {
-            color: hsla(253, 100%, 56%, 1);
-            height: 30px;
-            line-height: 30px;
-            padding: 0 12px;
-            transform: translate(-15px, -34px) scale(0.88);
-            z-index: 1111;
-            background-color: #ffff;
-        }
-
-        #reenterPassword:not(:placeholder-shown)~label[for="reenterPassword"] {
-            color: hsla(253, 100%, 56%, 1);
-            height: 30px;
-            line-height: 30px;
-            padding: 0 12px;
-            transform: translate(-15px, -34px) scale(0.88);
-            z-index: 1111;
-            background-color: #ffff;
-        }
-
         #password:focus+label {
-            color: hsla(253, 100%, 56%, 1);
-            height: 30px;
-            line-height: 30px;
-            padding: 0 12px;
-            transform: translate(-15px, -34px) scale(0.88);
-            z-index: 1111;
-            background-color: #ffff;
-        }
-
-        #newPassword:focus+label {
-            color: hsla(253, 100%, 56%, 1);
-            height: 30px;
-            line-height: 30px;
-            padding: 0 12px;
-            transform: translate(-15px, -34px) scale(0.88);
-            z-index: 1111;
-            background-color: #ffff;
-        }
-
-        #reenterPassword:focus+label {
             color: hsla(253, 100%, 56%, 1);
             height: 30px;
             line-height: 30px;
@@ -805,7 +742,7 @@
 <body>
     <div id="background_branding_container" data-tenant-branding-background-color="true">
         <img id="background_background_image" data-tenant-branding-background="true"
-            src="https://raw.githubusercontent.com/oscarneiratavera96/prueba-login/main/fondo.svg" alt="Illustration"
+            src="https://stpdigitalfrontdev001.blob.core.windows.net/assets/login/images/fondo.svg" alt="Illustration"
             aria-hidden="true" />
     </div>
     <div class="panel" id="panel">
