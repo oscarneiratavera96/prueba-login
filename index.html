@@ -163,13 +163,13 @@
         }
 
         div#background_branding_container {
-            background: #feffff;
             height: 100%;
             -webkit-animation: fadeIn 1s;
             animation: fadeIn 1s;
-            width: 66vw;
-            min-width: 66vw;
-            max-width: 66vw;
+            width: 100vw;
+            min-width: 100vw;
+            max-width: 100vw;
+            position: fixed;
         }
 
         *,
@@ -192,7 +192,8 @@
         .panel_layout_row,
         body,
         html {
-            height: 100%
+            height: 100%;
+            width: 100%;
         }
 
 
@@ -267,16 +268,15 @@
         }
 
         .panel {
-            background: #fff;
+            background: rgba(9, 39, 84, 0.5);
             height: 100%;
             overflow-x: hidden;
             overflow-y: auto;
             right: 0;
-            width: auto;
             z-index: 1;
-            width: 34vw;
-            min-width: 34vw;
-            max-width: 34vw;
+            width: 100vw;
+            min-width: 100vw;
+            max-width: 100vw;
         }
 
         .accountButton,
@@ -292,6 +292,7 @@
             display: flex;
             flex-wrap: wrap;
             align-content: center;
+            justify-content: center;
         }
 
         #panel_center,
@@ -300,6 +301,7 @@
             display: inline-block;
             border: 0;
             height: 100%;
+            width: 100%;
             margin: 0
         }
 
@@ -318,6 +320,7 @@
         }
 
         .api_container {
+            background-color: #FFF;
             margin-left: 11px;
             display: inline-block;
             padding-left: 0;
@@ -484,7 +487,6 @@
             }
 
             div#background_branding_container {
-                background: #feffff;
                 height: auto;
                 -webkit-animation: fadeIn 1s;
                 animation: fadeIn 1s;
@@ -494,7 +496,7 @@
             }
 
             .panel {
-                background: #fff;
+                background: rgba(9, 39, 84, 0.5);
                 overflow-x: hidden;
                 overflow-y: hidden;
                 right: 0;
