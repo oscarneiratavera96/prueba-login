@@ -276,28 +276,6 @@ function observarCambiosEnDisplay() {
   }
 }
 
-function addRegisterButton() {
-  // Obtener el botón de "Entrar"
-  const submitButton = document.getElementById("next");
-
-  // Verificar si el botón de "Entrar" existe
-  if (submitButton) {
-    // Crear el nuevo botón
-    const newButton = document.createElement("button");
-
-    // Asignar texto y enlace al nuevo botón
-    newButton.textContent = "Registrarse";
-    newButton.onclick = function () {
-      window.location.href = "https://registro-dev.gruposaesa.cl/onboarding";
-    };
-
-    // Insertar el nuevo botón antes del botón de "Entrar"
-    submitButton.parentNode.insertBefore(newButton, submitButton);
-  } else {
-    console.error('El botón de "Entrar" no existe.');
-  }
-}
-
 /**
  * Temporizador de funciones para permitir que cargue primero el html antes que el js
  */
@@ -310,6 +288,5 @@ setTimeout(() => {
   establecerErrorInputPassword();
   crearVerPassword();
   redirigirCambio();
-  addRegisterButton();
   observarCambiosEnDisplay();
 }, 1);
